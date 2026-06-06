@@ -1,0 +1,13 @@
+*.jsonl
+*.csv
+*.zip
+*.json
+*.txt
+*.bin
+*.pt
+*.pkl
+*.bin
+__pycache__/
+Task_3_FMR.pdf
+!output/stress_test_py/raw_stress_test_outputs.txt
+!output/old_outputs/old_stress_test_py/old_raw_stress_test_outputs.txt

@@ -1,0 +1,78 @@
+=== RAW ADVERSARIAL STRESS TEST LOGS ===
+
+Test: Repetition Loop Vulnerability
+Severity: HIGH
+Input: The rain falls. The rain falls. 
+Output: The rain falls. The rain falls. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+========================================
+Test: Context Memory Overflow Limit
+Severity: CRITICAL
+Input: 140 word repetitions
+Output: word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word 
+ 
+ 
+e
+ 
+n
+o
+r
+i
+t
+o
+
+========================================
+Test: High-Temperature Entropy Hallucination
+Severity: HIGH
+Input: Deep in the shadows of the concrete jungle,
+Output: Deep in the shadows of the concrete jungle,��; �th KReza syllabic Ver- - - - van bme or vans th׶S�im's atVer6th lin in4And Reza syllabic Vert �right �startoftext|>
+<|type|> poem
+<|content|>� in
+========================================
+Test: Logical Coherence & Contradiction Tracking
+Severity: MEDIUM
+Input: I hate hip-hop music, it makes me angry. So I wrote a rap song because I love it: 
+Output: I hate hip-hop music, it makes me angry. So I wrote a rap song because I love it: 
+ 
+e
+a
+e
+a
+ 
+ 
+h
+e
+t
+ 
+r
+a
+e
+i
+e
+n
+i
+ 
+e
+ 
+ 
+o
+========================================

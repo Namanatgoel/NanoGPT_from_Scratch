@@ -1,0 +1,26 @@
+=== RAW ADVERSARIAL STRESS TEST LOGS ===
+
+Test: Repetition Loop Vulnerability
+Severity: HIGH
+Input: The rain falls. The rain falls. 
+Output: The rain falls. The rain falls. The beautiful soul of the beautiful soul of the beautiful soul of the beautiful 
+========================================
+Test: Context Memory Overflow Limit
+Severity: CRITICAL
+Input: 140 word repetitions
+Output: word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word word world world work work word world world worl
+========================================
+Test: High-Temperature Entropy Hallucination
+Severity: HIGH
+Input: Deep in the shadows of the concrete jungle,
+Output: Deep in the shadows of the concrete jungle,Z;
+tense licaght thea 5emi f �sfi'Tendhis one
+e, her `it aned -y fithatires�tilor 
+========================================
+Test: Logical Coherence & Contradiction Tracking
+Severity: MEDIUM
+Input: I hate hip-hop music, it makes me angry. So I wrote a rap song because I love it: 
+Output: I hate hip-hop music, it makes me angry. So I wrote a rap song because I love it: -
+Some blood some flower is not a giving place of the claims.
+If I will not 
+========================================
