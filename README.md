@@ -2,7 +2,7 @@
 
 A production-grade, end-to-end custom Decoder-Only Transformer pipeline built from scratch in PyTorch. This project encompasses the full lifecycle of a Large Language Model (LLM): from raw data scraping and custom Byte-Pair Encoding (BPE) tokenization to base pre-training, architecture ablation studies, scaling experiments, and domain-specific fine-tuning (e.g., stylized rap lyrics).
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Features](#-features)
 - [Project Structure](#-project-structure)
@@ -17,7 +17,7 @@ A production-grade, end-to-end custom Decoder-Only Transformer pipeline built fr
   - [Phase 6: Multi-Strategy Inference](#phase-6-multi-strategy-inference)
 - [Architecture Details](#-architecture-details)
 
-## ✨ Features
+## Features
 
 - **From-Scratch Transformer Architecture:** A clean, heavily optimized PyTorch implementation of a GPT-2 style causal language model (`model/transformer.py`).
 - **Custom Tokenizers:** Includes both a custom Byte-Pair Encoding (BPE) tokenizer and a Character-level tokenizer, built completely without external tokenization libraries (`tokenizer/`).
@@ -26,7 +26,7 @@ A production-grade, end-to-end custom Decoder-Only Transformer pipeline built fr
 - **Multi-Strategy Inference Engine:** Supports Greedy, Temperature, Top-K, and Top-P (Nucleus) sampling mechanisms, featuring a custom "Ghost Byte Blocker" for robust UTF-8 token decoding (`evaluation/generate.py`, `evaluation/inference.py`).
 - **Automated Stress Testing:** Adversarial robustness profiling to systematically test the model against context overflows, repetition loops, and high-temperature hallucinations (`evaluation/stress_test.py`).
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Project/
@@ -66,7 +66,7 @@ Project/
 
 *(Note: Data files, model checkpoints, `.json`/`.jsonl`/`.csv`/`.bin` artifacts, and `__pycache__` directories are dynamically generated and omitted for clarity).*
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the Repository**
 2. **Setup Python Environment (Python 3.8+ Recommended)**
@@ -79,7 +79,7 @@ Project/
    ```
    *Expected Output: PyTorch Version, CUDA Availability, and GPU Device Name.*
 
-## 🛠 Configuration Guide
+## Configuration Guide
 
 All model hyperparameters, network architectures, and training loop parameters are entirely decoupled into a central registry located at `configs/experiment_configs.py`. 
 
@@ -100,7 +100,7 @@ BASE_TEMPLATE = {
 ```
 To run an experiment, simply pass the target configuration dictionary key (e.g., `task_4_1_baseline`, `task_4_3_large`) as a CLI argument to the training scripts.
 
-## 🚀 Execution Pipeline
+## Execution Pipeline
 
 ### Phase 1: Data Preparation
 Ensure your raw corpora (e.g., clean poems and rap JSON/JSONL) are present in the `data/` directory. If they aren't, use the scripts inside `data/fetching_dataset_scripts/`.
@@ -163,7 +163,7 @@ Run prompt-conditioned generation using the fine-tuned model checkpoint. This sc
 python evaluation/inference.py --prompt "Deep in the shadows of the concrete jungle," --temperature 0.7 --top_k 40
 ```
 
-## 🧠 Architecture Details
+## Architecture Details
 
 The core language model (`model/transformer.py`) is a Decoder-only architecture utilizing standard modern practices:
 - **Pre-Norm Architecture**: `LayerNorm` is strictly applied *before* the Multi-Head Attention and FeedForward blocks, rather than after, stabilizing deep gradients.
